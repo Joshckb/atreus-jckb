@@ -1,3 +1,5 @@
+#define PCBDOWN
+
 #undef MATRIX_ROW_PINS
 #undef MATRIX_COL_PINS
 
