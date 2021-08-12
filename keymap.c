@@ -18,10 +18,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
 
   [_RS] = LAYOUT( /* Raise */
-    LALT(KC_TAB),  KC_EXLM, KC_AT,   KC_HASH, KC_DLR,                    KC_EQL,  KC_LPRN,    KC_RPRN,    KC_CUT,  KC_NO,
-    LGUI(KC_TAB),  KC_PERC, KC_CIRC, KC_AMPR, KC_ASTR,                   KC_BSLS, KC_LCBR,    KC_RCBR,    KC_COPY, KC_PSTE,
+    LALT(KC_TAB),   KC_EXLM, KC_AT,   KC_HASH, KC_DLR,                    KC_EQL,  KC_LPRN,    KC_RPRN,    KC_CUT,  KC_DEL,
+    LGUI(KC_TAB),   KC_PERC, KC_CIRC, KC_AMPR, KC_ASTR,                   KC_BSLS, KC_LCBR,    KC_RCBR,    KC_COPY, KC_PSTE,
     KC_LSFT,        KC_NO,   KC_NO,   KC_NO,   KC_NO,                     KC_GRV,  KC_LBRC,    KC_LBRC,    KC_NO,   KC_RSFT,
-    KC_TRNS,        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_LCTL, TO(_AD), KC_TRNS, KC_TRNS,    KC_NO,      KC_NO,   KC_DEL
+    KC_TRNS,        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_LCTL, TO(_AD), KC_TRNS, KC_TRNS,    KC_NO,      KC_NO,   KC_NO
   ),
 
   [_LW] = LAYOUT( /* Lower */
