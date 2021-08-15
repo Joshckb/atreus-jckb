@@ -13,4 +13,5 @@
 #define RGB_DI_PIN C7
 
 #define TAPPING_TERM 160
+#define TAB_TIMER_TERM 500
 
