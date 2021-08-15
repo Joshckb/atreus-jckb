@@ -7,8 +7,10 @@
 #define MATRIX_COL_PINS { D7, E6, B4, B5, F4, F5, B6, B2, B3, B1, F7 }
 
 #undef RGBLED_NUM
-
-#define RGB_DI_PIN C7
 #define RGBLED_NUM 6
-#define TAPPING_TERM 135
+
+#undef RGB_DI_PIN
+#define RGB_DI_PIN C7
+
+#define TAPPING_TERM 160
 

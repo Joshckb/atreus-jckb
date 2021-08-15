@@ -3,7 +3,7 @@
 
 // Colors
 static const cRGB indicator = { 0, 10, 0 };
-static const cRGB white = { 10, 10, 10 };
+static const cRGB white = { 16, 16, 16 };
 static const cRGB off = { 0, 0, 0 };
 
 // TODO: Handle this better.
@@ -20,12 +20,12 @@ static uint8_t base_led_indices[4] = {};
 static uint8_t caps_lock_led_index = 5;
 static uint8_t num_lock_led_index = 0;
 static cRGB leds[RGBLED_NUM] = {
-    { 10, 10, 10 },
-    { 10, 10, 10 },
-    { 10, 10, 10 },
-    { 10, 10, 10 },
-    { 10, 10, 10 },
-    { 10, 10, 10 }
+    { 16, 16, 16 },
+    { 16, 16, 16 },
+    { 16, 16, 16 },
+    { 16, 16, 16 },
+    { 16, 16, 16 },
+    { 16, 16, 16 }
 };
 
 static void _update_leds(LED_TYPE *ledarray) {
