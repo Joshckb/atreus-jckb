@@ -14,4 +14,5 @@
 
 #define TAPPING_TERM 160
 #define TAB_TIMER_TERM 500
+#define RESET_THRESHOLD 1500
 
