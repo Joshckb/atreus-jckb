@@ -29,9 +29,7 @@ enum custom_keycode {
 uint16_t reset_timer = 0;
 
 bool is_alt_tab_active = false;
-uint16_t alt_tab_timer = 0;
 bool is_clt_tab_active = false;
-uint16_t clt_tab_timer = 0;
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
@@ -90,10 +88,8 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
                 }
 
                 if (is_clt_tab_active) {
-                    if (timer_elapsed(clt_tab_timer) > TAB_TIMER_TERM) {
-                        unregister_code(KC_LCTL);
-                        is_clt_tab_active = false;
-                    }
+                    unregister_code(KC_LCTL);
+                    is_clt_tab_active = false;
                 }
             }
 
@@ -114,7 +110,6 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
                     }
                 }
 
-                alt_tab_timer = timer_read();
                 register_code(KC_TAB);
             } else {
                 unregister_code(KC_TAB);
@@ -129,7 +124,6 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
                     register_code(KC_LCTL);
                 }
 
-                clt_tab_timer = timer_read();
                 register_code(KC_TAB);
             } else {
                 unregister_code(KC_TAB);
