@@ -1,0 +1,3 @@
+[submodule "joshckb"]
+	path = joshckb
+	url = git@github.com:jMavarez/joshckb.git

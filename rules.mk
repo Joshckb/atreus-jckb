@@ -17,7 +17,8 @@ TAP_DANCE_ENABLE = no      # Dance keyboard DANCE!
  
 DEFAULT_FOLDER = atreus/promicro
 
-SRC += os_mode_utils.c
+SRC += joshckb/joshckb.c
+SRC += joshckb/os_mode_utils.c
 
 #SRC += ws2812.c
 #SRC += led_cluster.c
