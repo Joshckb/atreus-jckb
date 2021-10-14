@@ -1,4 +1,5 @@
 #define PCBDOWN
+#define IGNORE_MOD_TAP_INTERRUPT
 
 #undef MATRIX_ROW_PINS
 #undef MATRIX_COL_PINS
